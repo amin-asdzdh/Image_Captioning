@@ -1,6 +1,47 @@
-# CVND---Image-Captioning-Project
+# Image Captioning (Udacity project)
+
+
+
+![readme](./images/readme.png)
+
+
+
+This project uses CNNs and LSTMs to automatically generate captions from images.
+
+
+
+### Data
+
+The Microsoft Common Objects in Context (MS COCO) dataset is a large-scale dataset for scene understanding. The dataset is commonly used to train and benchmark object detection, segmentation, and captioning algorithms.
+
+
+
+![coco-examples](./images/coco-examples.jpg)
+
+
+
+You can read more about the dataset on the [website](http://cocodataset.org/#home) or in the [research paper](https://arxiv.org/pdf/1405.0312.pdf).
+
+To obtain and explore the dataset, you can use the [COCO API](https://github.com/cocodataset/cocoapi).
+
+
+
+### Model Architecture
+
+The core architecture is an encoder-decoder, where the encoder is a pretrained ResNet CNN on ImageNet, and the decoder is a basic LSTM.
+
+
+
+![encoder-decoder](./images/encoder-decoder.png)
+
+
+
+
 
 # Instructions  
+
+
+
 1. Clone this repo: https://github.com/cocodataset/cocoapi  
 ```
 git clone https://github.com/cocodataset/cocoapi.git  
